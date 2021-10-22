@@ -10,13 +10,13 @@ namespace Practica1_FSCH.Tests
         }
 
         [Test]
-        public void TDD_WhenSum_ReturnGreater([Values (2)] int numero1,[Values(4)] int numero2)
+        public void TDD_WhenSum_ReturnGreater([Values (4)] int numero1,[Values(2)] int numero2)
         {
             string resultado =Practica1FSCH.Sum(numero1,numero2);
 
           
 
-            Assert.IsNotEmpty(resultado);
+            Assert.Greater(numero1,numero2);
         }
 
         [Test]
@@ -26,7 +26,7 @@ namespace Practica1_FSCH.Tests
 
 
 
-            Assert.IsNotEmpty(resultado);
+            Assert.Less(numero1,numero2);
         }
     }
 }
