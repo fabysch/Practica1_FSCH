@@ -18,5 +18,12 @@ namespace Practica1_FSCH_Library
 
             return valor;
         }
+        public static string salidaprueba(int numero1, int numero2)
+        {
+            int resultado = numero1 + numero2;
+            string valor = numero1 > numero2 ? "el primer numero " + numero1 + " es mayor que el segundo numero " + numero2 : "el segundo numero " + numero2 + " es mayor que el primer numero" + numero1 + " Resultado de la suma " + resultado;
+
+            return valor;
+        }
     }
 }

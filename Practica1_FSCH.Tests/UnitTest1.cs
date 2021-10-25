@@ -26,7 +26,7 @@ namespace Practica1_FSCH.Tests
 
 
 
-            Assert.Less(numero1,numero2);
+            Assert.Less(numero2,numero1);
         }
     }
 }
